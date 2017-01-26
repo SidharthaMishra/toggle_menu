@@ -1,0 +1,46 @@
+<!--
+    Author: Sidhartha Mishra
+    Simple toggle menu with hover effects developed using HTML, CSS and jQuery.
+-->
+
+<!DOCTYPE html>
+<html>
+    
+  <head>  
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      
+    <script>
+        $(document).ready(function(){
+            $(".menu_container").hide();
+            $(".menu_button").click(function(){
+              $(".menu_container").toggle(600);
+            });
+        });
+    </script>
+  </head>
+
+  <body>
+      
+    <div class="menu_button_container">
+      <button class="menu_button">
+        MENU
+      </button>
+    </div>
+
+    <div class="menu_container">
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+    </div>
+
+  </body>
+
+</html>

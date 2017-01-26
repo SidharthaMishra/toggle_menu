@@ -1,0 +1,57 @@
+/* 
+    Author: Sidhartha Mishra
+    Simple toggle menu with hover effects developed using HTML, CSS and jQuery.
+*/
+
+body{
+  background-image:url("../img/backgroundImg.png");
+  background-size:cover;
+}
+
+ul{
+  list-style-type:none;
+}
+
+.menu_container{
+    background-color:#262626;
+    position: fixed;
+    padding:0px;
+    width:200px;
+    height:91%;
+    border: 3px solid #FFFFFF;
+    display:inline-block;
+}
+
+.menu{
+  padding-top: 200px;
+  text-shadow: 4px 4px 10px #000000;
+  text-decoration:none;
+  font-family: sans-serif;
+  color:white;
+  font-weight:bold;
+}
+
+.menu>ul>li{
+  padding-bottom:10px; 
+}
+
+.menu>ul>li>a{
+    font-size:25px;
+    text-decoration:none;
+    color: inherit;
+}
+
+.menu>ul>li>a:hover{
+    font-size:30px;
+    text-decoration:underline;
+}
+
+.menu_button{
+  color:white;
+  background-color: #1a1a1a;
+  font-weight:bold;
+  padding:20px;
+  font-size:25px;
+  border-radius:5%;
+  cursor:pointer;
+}
